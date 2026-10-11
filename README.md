@@ -19,9 +19,9 @@ This is a financial research and scenario-analysis framework. It does not assign
 - [Public source workbook](src/assets/Dallas-ISD-Budget-Public.xlsx)
 - [Release and verification notes](docs/RELEASE_NOTES.md)
 
-**Application access:** [Open the live demo](https://ralmeidaa22.github.io/dallas-isd-financial-risk-dashboard/), download `index.html` from the [v1.0.0 release](https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard/releases/tag/v1.0.0) for standalone use, or build locally using the instructions below. GitHub's file preview does not execute the application.
+**Application access:** [Open the live demo](https://ralmeidaa22.github.io/dallas-isd-financial-risk-dashboard/), download `index.html` from the [v1.0.1 release](https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard/releases/tag/v1.0.1) for standalone use, or build locally using the instructions below. GitHub's file preview does not execute the application.
 
-The [public repository](https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard) and demo are published. GitHub Pages downloads the bundled application initially; workbook parsing and scenario calculations then run in browser memory. The hosted demo was verified in Chrome with no HTTP(S) requests during sample loading, scenario operations or public workbook upload, and no console errors. The approved PDFs remain unchanged; pending links inside them will be updated separately.
+The [public repository](https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard) and demo are published. GitHub Pages downloads the bundled application initially; workbook parsing and scenario calculations then run in browser memory. The hosted demo was verified in Chrome with no HTTP(S) requests during sample loading, scenario operations or public workbook upload, and no console errors. The PDFs in v1.0.1 include verified repository, demo and original v1.0.0 release links; the original release remains intact.
 
 ## What you can do
 

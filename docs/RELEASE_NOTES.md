@@ -1,5 +1,13 @@
 # Publication and Verification
 
+## v1.0.1 documentation update
+
+Release: https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard/releases/tag/v1.0.1
+
+Replaced the two reports with author-supplied PDFs from `Dallas-ISD-PDFs-With-Public-Links`. The 31-page research report and three-page showcase contain clickable repository, demo and original v1.0.0 release links; all three destinations returned HTTP 200 before replacement. No PDF binaries were edited by the publication workflow.
+
+The application, dependencies, workbook and standalone HTML are unchanged. The v1.0.0 tag, release and assets remain intact. This update includes both updated PDFs, the same standalone HTML and the same public workbook. Functional browser results below belong to v1.0.0 and are not represented as newly rerun checks for this documentation update.
+
 ## v1.0.0 publication
 
 Published repository: https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard
@@ -20,7 +28,7 @@ Publication verification on October 11, 2026:
 ## Remaining decisions
 
 - No software license has been selected; repository visibility does not imply an open-source license.
-- Update pending links inside the approved PDFs separately.
+- The pending PDF links recorded for v1.0.0 were resolved in the author-supplied v1.0.1 reports.
 - Dependency audit results below belong to the earlier candidate preparation and were not rerun for this publication; no dependency changes were made.
 
 ## Historical candidate preparation
