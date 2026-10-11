@@ -8,7 +8,9 @@ Future surpluses repay outstanding funding shortfall before rebuilding available
 
 ## Documentation and publication
 
-The full Financial Research & Technical Methodology Report and three-page Project Showcase were approved by the project author. Both are included in `docs/reports/`. Public repository and demo links are pending.
+The [public repository](https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard) and [GitHub Pages demo](https://ralmeidaa22.github.io/dallas-isd-financial-risk-dashboard/) are published. The demo returned HTTP 200 and passed Chrome workflow checks, including sample loading, scenarios, multi-year recovery, Break-Even and workbook upload, without console errors or runtime HTTP(S) requests after initial site loading.
+
+The full Financial Research & Technical Methodology Report and three-page Project Showcase were approved by the project author. Both are included in `docs/reports/` and remain byte-for-byte unchanged. Pending public links inside the PDFs will be updated separately. The first downloadable release is [v1.0.0](https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard/releases/tag/v1.0.0).
 
 This candidate adds professional repository documentation and selected figures. It excludes protected originals, obsolete HTML copies, historical implementation screenshots, local test artifacts, dependencies and machine-specific files.
 

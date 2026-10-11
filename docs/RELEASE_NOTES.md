@@ -1,6 +1,29 @@
-# Publication Preparation and Verification
+# Publication and Verification
 
-## Candidate package
+## v1.0.0 publication
+
+Published repository: https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard
+
+Verified demo: https://ralmeidaa22.github.io/dallas-isd-financial-risk-dashboard/
+
+Downloadable release: https://github.com/ralmeidaa22/dallas-isd-financial-risk-dashboard/releases/tag/v1.0.0
+
+Publication verification on October 11, 2026:
+
+- Local `npm ci`, `npm test` (30 tests across two files) and `npm run build` passed with Node.js 24.
+- GitHub Actions build and Pages deployment passed. The workflow runs on pushes to `main` and manual dispatch, uses Node.js 24, tests before building, and uploads only `dist` with the official Pages actions. `dist` remains ignored by Git.
+- The deployed URL returned HTTP 200 in headless Chrome. Sample loading, guided scenarios, operating-result bridge, multi-year horizons and recovery paths, fund-balance floor and shortfall repayment, Break-Even's 36-cell matrix, all navigation tabs and public workbook upload passed.
+- No browser console or uncaught application errors were observed. The initial network request downloaded the bundled HTML; no HTTP(S) application requests occurred during sample loading, scenario operations or workbook upload. Source inspection confirms uploaded files are read with `File.arrayBuffer()` and parsed in browser memory. These checks cover the exercised workflows, not every possible user input.
+- The $500M beginning reserve example is illustrative, not an official Dallas ISD balance. Outputs are hypothetical scenarios, not official forecasts, ratings or investment recommendations.
+- Financial logic, dependencies, public workbook and approved PDF binaries remain unchanged. Pending links within the PDFs have not been corrected and will be reviewed separately.
+
+## Remaining decisions
+
+- No software license has been selected; repository visibility does not imply an open-source license.
+- Update pending links inside the approved PDFs separately.
+- Dependency audit results below belong to the earlier candidate preparation and were not rerun for this publication; no dependency changes were made.
+
+## Historical candidate preparation
 
 Prepared October 11, 2026. No repository, demo or release has been published by this preparation step.
 
@@ -8,7 +31,7 @@ This package contains the existing financial application, sanitized public Excel
 
 No financial calculations, application styling, test logic, dependencies or workbook financial values were changed. The repository's internal npm package name remains `dallas-isd-fiscal-stress-lab` to preserve the dependency manifest and lockfile.
 
-## Checks rerun on this candidate
+## Historical candidate checks
 
 - `npm ci --ignore-scripts --no-audit --no-fund`: passed.
 - `npm test`: 30 tests passed across two test files.
@@ -21,19 +44,11 @@ No financial calculations, application styling, test logic, dependencies or work
 
 The prior delivery record reports Chrome HTTP and `file://` workflows, no external application requests and a clean console. Those workflows were not rerun during this packaging step; the unchanged rebuilt HTML and source preserve the previously verified application. Browser reproduction instructions are in the README.
 
-## Dependency audit
+## Historical dependency audit
 
 The production-only npm audit reports zero vulnerabilities for this dependency snapshot. The full audit reports three high-severity entries in the development chain `vite-plugin-singlefile` → `micromatch` → `braces`, representing the propagated stack-exhaustion advisory. No dependency upgrade or forced downgrade was applied in this documentation-only preparation. Recheck the audit when publishing; audit findings can change over time.
 
-## Publication decisions still open
-
-1. Confirm the public GitHub account and repository name. Suggested name: `dallas-isd-financial-risk-dashboard`.
-2. Select a software license before describing the project as open source. No license has been silently assigned.
-3. Decide whether to host a static demo. Local standalone access already works; a live demo is optional.
-4. Approve the concrete repository/release contents before any public upload.
-5. Add final public repository, demo and report-release links to the README and approved PDFs, then review the linked versions.
-
-## Suggested first release
+## Original candidate release proposal
 
 Title: `v1.0.0 — Financial Scenario Analysis and Multi-Year Outlook`
 
