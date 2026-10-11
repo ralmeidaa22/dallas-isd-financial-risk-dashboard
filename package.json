@@ -1,0 +1,23 @@
+{
+  "name": "dallas-isd-fiscal-stress-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:browser": "node tests/browser-smoke.mjs"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.9",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.62.1",
+    "vite": "^6.1.0",
+    "vite-plugin-singlefile": "^2.2.0",
+    "vitest": "4.1.11"
+  }
+}
